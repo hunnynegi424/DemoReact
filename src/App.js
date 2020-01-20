@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import ReactFunc, { ReactCls } from './components/React';
+import NestingDemo from './components/NestingDemo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NestingDemo title="Hello, I'm a prop." message="I'll be passed on as a prop to the component"/>
+      {/* <ReactFunc />
+      <ReactCls /> */}
     </div>
   );
 }
