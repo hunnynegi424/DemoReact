@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import ChildComp1 from './ChildComponents/ChildComp1';
 
 class NestingDemo extends Component {
     render() {
-        console.log('props', this.props)
         return (
-            <div>
-                <h2>{this.props.title}</h2>
-                <p>{this.props.message}</p>
+            <div style={{backgroundColor: 'white', color: 'black'}}>
+                <ChildComp1/>
             </div>
         )
     }
