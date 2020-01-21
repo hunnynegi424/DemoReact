@@ -1,11 +1,14 @@
 import React from 'react';
-import ChildComp3 from './ChildComp3';
+import Skills from './ChildComp3';
 
 function ChildComp2() {
     return (
         <div>
-            Bonjour! I'm child component 2.
-            <ChildComp3 />
+            <p>Front-end Developer</p>
+            <div>
+                <h6>Skills</h6>
+                <Skills />
+            </div>
         </div>
     )
 }

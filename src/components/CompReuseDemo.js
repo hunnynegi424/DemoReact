@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './index.css';
 
-class CompReuseDemo extends Component {
-    render() {
-
+function CompReuseDemo(props) {
         // we can manipulate the props
-        const newArrayOfNames = this.props.names.map(each => {
+        const newArrayOfNames = props.names.map(each => {
             const newEach = each.split(", ");
             return `${newEach[1]} ${newEach[0]}`
         })
 
         return (
-            <div>
-                <h2>{this.props.title}</h2>
+            <div className="compReuse">
+                <h2>{props.title}</h2>
                 <h5>Names:</h5>
-                {newArrayOfNames.map(m => (
-                    <p key={m}>{m}</p>
-                ))}
+                <ol>{newArrayOfNames.map(m => (
+                    <li key={m}>{m}</li>
+                ))}</ol>
             </div>
         )
-    }
 }
 
 export default CompReuseDemo

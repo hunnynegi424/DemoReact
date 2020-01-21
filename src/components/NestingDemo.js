@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import './index.css';
 import ChildComp1 from './ChildComponents/ChildComp1';
 
-class NestingDemo extends Component {
-    render() {
+function NestingDemo () {
         return (
-            <div style={{backgroundColor: 'white', color: 'black'}}>
+            <div className="nestingDemo">
                 <ChildComp1/>
             </div>
         )
-    }
 }
 
 export default NestingDemo

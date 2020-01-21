@@ -22,11 +22,11 @@ function App() {
 
       
       {/* Nesting component inside component */}
-      {/* <NestingDemo />  */}
+      <NestingDemo /> 
 
       {/* Functional and Class component */}
-      <ReactFunc />
-      <ReactCls />
+      {/* <ReactFunc />
+      <ReactCls /> */}
     </div>
   );
 }

@@ -1,0 +1,29 @@
+.funcComp {
+    background-color: orange;
+    flex: 1;
+}
+
+.clsComp {
+    background-color: green;
+    flex: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nestingDemo {
+    color: rgb(255, 253, 253);
+    background-color: rgb(156, 67, 85);
+}
+
+.compReuse {
+    width: 30%;
+    margin: 20px auto;
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+
+.childComp3 {
+    width: 10%;
+    margin: 10px auto;
+}

@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import './index.css';
 
 
 // Functional Component
 export default function ReactFunc() {
-    const style = {
-        backgroundColor: 'orange', flex: 1
-    }
     return (
-        <div style={style}>
+        <div className="funcComp">
             Hello, I'm a functional compnent
         </div>
     )
@@ -17,17 +15,8 @@ export default function ReactFunc() {
 // Class component
 export class ReactCls extends Component {
     render() {
-
-        const styleObj = {
-            backgroundColor: 'green',
-            flex: 9,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-        }
-
         return (
-            <div style={styleObj}>
+            <div className="clsComp">
                 Hello, I'm a class compnent
             </div>
         )
