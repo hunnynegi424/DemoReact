@@ -11,18 +11,18 @@ function App() {
 
       {/* Reusing the component below and passing different props each time. */}
       
-      <CompReuseDemo
+      {/* <CompReuseDemo
         title="Hello, I'm a prop."
         names={['Doe, John', 'Pan, Peter', 'Bay, Michael', 'Gunn, Robert']}
       />
       <CompReuseDemo
         title="I'm reusing the component to display new names"
         names={['Stark, Brandon', 'Snow, John', 'Lanister, Tyrion', 'Targaryen, Aegon']}
-      />
+      /> */}
 
       
       {/* Nesting component inside component */}
-      <NestingDemo /> 
+      {/* <NestingDemo />  */}
 
       {/* Functional and Class component */}
       <ReactFunc />

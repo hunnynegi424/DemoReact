@@ -13,8 +13,8 @@ class CompReuseDemo extends Component {
             <div>
                 <h2>{this.props.title}</h2>
                 <h5>Names:</h5>
-                {newArrayOfNames.map(each => (
-                    <p key={each}>{each}</p>
+                {newArrayOfNames.map(m => (
+                    <p key={m}>{m}</p>
                 ))}
             </div>
         )
